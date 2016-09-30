@@ -1,10 +1,8 @@
-package de.kaufhof.kafkaConsumerBug
+package de.kaufhof.kafkaTopicCreationBug
 
 import java.util.UUID
 
 import org.scalatest.{FlatSpec, MustMatchers}
-
-import concurrent.duration._
 
 trait Helper { self: MustMatchers with FreshKafkaTopics =>
   def doTheTest() = {

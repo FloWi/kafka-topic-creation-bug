@@ -1,4 +1,4 @@
-package de.kaufhof.kafkaConsumerBug
+package de.kaufhof.kafkaTopicCreationBug
 
 import java.util.Properties
 

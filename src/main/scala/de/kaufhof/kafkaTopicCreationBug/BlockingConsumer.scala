@@ -1,12 +1,12 @@
-package de.kaufhof.kafkaConsumerBug
+package de.kaufhof.kafkaTopicCreationBug
 
 import java.util
+import java.util.Properties
 import java.util.concurrent.LinkedBlockingQueue
-import java.util.{Properties, UUID}
 
 import org.apache.kafka.clients.consumer.{ConsumerConfig, ConsumerRecord, KafkaConsumer}
-import scala.collection.JavaConversions._
 
+import scala.collection.JavaConversions._
 
 class BlockingConsumer(bootstrapServer: String, groupId: String, topic: String) {
 
