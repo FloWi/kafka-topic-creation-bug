@@ -18,6 +18,7 @@ class BlockingConsumer(bootstrapServer: String, groupId: String, topic: String) 
   props.put("session.timeout.ms", "30000")
   props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
   props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
+  //props.put("metadata.max.age.ms", "1000")
   props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest")
 
   private val consumer = new KafkaConsumer[String, String](props)
